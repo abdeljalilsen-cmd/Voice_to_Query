@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# Models & Data
+debug_audio/
+temp_audio/
+*.wav
+*.mp3
+*.sqlite3
+queryvoice_local.db
+offload_cache/
+huggingface_cache/
+
+# Large Model Files
+# Exclude checkpoints but keep the final adapter if needed
+ml_experiments/*/checkpoint-*/
+ml_experiments/t5_sql_finetuned*/
+*.pt
+*.pth
+*.bin
+*.safetensors
+!ml_experiments/v3_qlora_model/checkpoint-376/adapter_model.safetensors
+
+# IDEs
+.vscode/
+.idea/
+
+# Flutter/Dart
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+*.lock
